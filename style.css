@@ -7,6 +7,7 @@
 
 body {
   font-family: "Press Start 2P", system-ui;
+
 }
 
 .cabecalho {
@@ -28,11 +29,12 @@ body {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  gap: 2rem;
 }
 
 .conteudo__produtos {
   text-align: center;
-
+  height: 100vh;
 
 }
 
@@ -50,6 +52,8 @@ body {
   border: 3px solid black;
   border-radius: .5rem;
   box-shadow: -5px 6px 3.3px 0px rgba(0, 0, 0, 0.25);
+  height: 250px;
+  width: auto;
 }
 
 .card__imagem {
@@ -81,12 +85,35 @@ body {
 .container__cards {
   justify-content: center;
   display: grid;
-  grid-template-columns:  minmax(150px, 250px) minmax(150px, 250px) minmax(150px, 250px);
+  grid-template-columns:  minmax(150px, 200px) minmax(150px, 200px) minmax(150px, 200px);
+  grid-template-rows: auto;
   gap: 5rem .8rem;
-  flex-wrap: wrap;
+  height: 70vh;
+  overflow-y: auto;
+  padding: 0 .5rem;
 }
 
 
+.container__cards::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.container__cards::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+.container__cards::-webkit-scrollbar-thumb {
+  background-color: var(--cor-secundaria); 
+  border-radius: 4px; 
+}
+
+.nenhum-produto {
+  background-color: var(--cor-principal);
+  color: white;
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 3px solid black;
+}
 
 .conteudo__formulario h1 {
   margin-bottom: 3rem;
@@ -142,4 +169,54 @@ body {
   color: white;
   background-color: var(--cor-secundaria);
   font-weight: bold;
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--cor-principal);
+  color: white;
+  padding: 2rem;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase
+}
+
+.rodape a {
+  color:white;
+}
+
+.rodape__logo {
+  font-family: "Press Start 2P", system-ui;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  text-transform: none;
+}
+
+
+@media(max-width: 768px) {
+  .conteudo-principal {
+    flex-direction: column-reverse;
+  }
+
+  .container__cards {
+   
+    grid-template-columns:  minmax(150px, 200px) minmax(150px, 200px);
+    grid-template-rows: auto;
+  }
+
+  .produtos__card {
+    width: 150px;
+    height: 240px;
+  }
+}
+
+@media(max-width: 500px) {
+  .container__cards {
+    grid-template-columns:  minmax(150px, 200px);
+    gap: 2rem .8rem;
+  }
 }

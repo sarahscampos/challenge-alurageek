@@ -3,32 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alura Geek</title>
+  <title>AluraGeek</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="cabecalho">
     <img src="img/hearts.svg" alt="ícones corações" class="icone-coracoes">
-    <p>Alura Geek</p>
+    <p>AluraGeek</p>
   </header>
 
   <main class="conteudo-principal">
-    <div class="conteudo__produtos">
+    <section class="conteudo__produtos">
       <h1>Meus Produtos:</h1>
+      <p class="nenhum-produto">Nenhum produto foi adicionado</p>
       <div class="container__cards">
         <div class="produtos__card">
           <img src="img/stormtrooper.png" alt="stormtrooper" class="card__imagem">
           <p class="card__titulo">Stormtrooper</p>
           <div class="card__infos">
             <p>$ 60,00</p>
-            <button><img src="img/icon _trash 2_.svg" alt=""></button>
+            <button><img src="img/icon _trash 2_.svg" alt="ícone lixeira"></button>
           </div>
         </div> 
+         
+         
+        
       </div>
-    </div>
+    </section>
 
-    <div class="conteudo__formulario">
+    <section class="conteudo__formulario">
       <h1>Adicionar Produto:</h1>
       <form action="">
         <input type="text" name="nome" id="nome" placeholder="Nome...">
@@ -39,8 +43,20 @@
           <button>Limpar</button>
         </div>
       </form>
-    </div>
+    </section>
+
   </main>
+  <footer class="rodape">
+      <div class="rodape__logo">
+        <img src="img/hearts.svg" alt="ícones corações" class="icone-coracoes">
+        <p>AluraGeek</p>
+      </div>
+
+ 
+      <p>Desenvolvido por <a href="https://github.com/sarahscampos" target="_blank">Sarah Campos</a></p>
+      <p>Alura Latam - 2024</p>
+
+  </footer>
 
 </body>
 </html>
