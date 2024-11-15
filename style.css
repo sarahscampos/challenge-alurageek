@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.body {
+  font-family: "Press Start 2P", system-ui;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #5300C8;
+  font-family: "Press Start 2P", system-ui;
+  color: white;
+  padding: 1rem;
+}
+
+.icone-coracoes {
+  height: 40px;
+}
