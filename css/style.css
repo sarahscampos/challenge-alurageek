@@ -58,6 +58,7 @@ body {
 
 .card__imagem {
   width: 100%;
+  height: 70%;
   margin-bottom: 1rem;
 }
 
