@@ -48,7 +48,7 @@ body {
   color: white;
   font-family: "IBM Plex Mono", monospace;
   background-color: var(--cor-principal);
-  padding: .5rem;
+  padding: 1.5rem 1rem;
   border: 3px solid black;
   border-radius: .5rem;
   box-shadow: -5px 6px 3.3px 0px rgba(0, 0, 0, 0.25);
