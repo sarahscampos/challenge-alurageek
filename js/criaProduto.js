@@ -5,7 +5,7 @@ const formulario = document.querySelector('[data-formulario]');
 const botaoLimpar = document.querySelector('[data-limpar]');
 
 async function criaProduto(evento) {
-  evento.preventDefault();
+  // evento.preventDefault();
 
   const nome = document.querySelector("[data-nome]").value;
   const imagem = document.querySelector("[data-imagem]").value;
