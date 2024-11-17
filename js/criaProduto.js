@@ -1,4 +1,5 @@
 import { conectaApi } from "./conectaApi.js";
+import listaProdutos from "./mostraProdutos.js";
 
 
 const formulario = document.querySelector('[data-formulario]');
@@ -14,6 +15,7 @@ async function criaProduto(evento) {
   try {
     await conectaApi.postProduto(nome, valor, imagem);
     alert("Produto adicionado com sucesso!");
+    listaProdutos();
   }
   catch(error) {
     alert("Erro ao adicionar produto: " + error.message);
