@@ -3,7 +3,7 @@ import { conectaApi } from "./conectaApi.js";
 const produtoContainer = document.querySelector("[data-container]");
 const conteudo = document.querySelector("[data-conteudo]");
 
-function constroiCard(nome, valor, imagem, id) {
+export default function constroiCard(nome, valor, imagem, id) {
   const card = document.createElement("div");
   card.className = "produtos__card";
   card.innerHTML = `<img src="${imagem}" alt="${nome}" class="card__imagem">
@@ -16,7 +16,7 @@ function constroiCard(nome, valor, imagem, id) {
   return card;
 }
 
-export default async function listaProdutos() {
+async function listaProdutos() {
   try {
     const listaApi = await conectaApi.getProdutos();
     listaApi.forEach(elemento => produtoContainer.appendChild(
