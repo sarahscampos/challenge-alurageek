@@ -22,7 +22,7 @@ async function criaProduto(evento) {
 }
 
 botaoLimpar.addEventListener("click", (evento) => {
-  // evento.preventDefault();
+  evento.preventDefault();
   formulario.reset();
 })
 
