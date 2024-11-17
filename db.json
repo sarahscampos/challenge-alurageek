@@ -1,0 +1,16 @@
+{
+  "produtos": [
+    {
+      "id": "f3ca",
+      "nome": "PSP",
+      "valor": "100",
+      "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Psp-1000.jpg/640px-Psp-1000.jpg"
+    },
+    {
+      "id": "1fg3",
+      "nome": "Rubber duck debugging",
+      "valor": "10",
+      "imagem": "https://devducks.com/static/devducks/imgs/js-duck.jpg"
+    }
+  ]
+}

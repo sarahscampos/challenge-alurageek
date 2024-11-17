@@ -145,7 +145,6 @@ body {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  
 }
 
 .formulario__botoes button {
@@ -153,7 +152,7 @@ body {
   font-family: "IBM Plex Mono", monospace;
   border-radius: .5rem;
   padding: .5rem;
-
+  cursor: pointer;
   border: 3px solid var(--cor-secundaria);
   color: var(--cor-secundaria);
   background-color: white;
